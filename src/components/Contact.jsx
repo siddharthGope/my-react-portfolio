@@ -1,15 +1,18 @@
 import React from "react";
 import Card from "./cards/Card";
-import DownloadButton from "./buttons/DownloadButton";
+import githubSign from '../assets/github-sign.png'
+import linkedin from '../assets/linkedin.png'
+import mail from '../assets/mail.png'
+import download from '../assets/download.png'
 
 
 function Contact() {
 
     const contactInfo = [
-        { title: 'LinkedIn', image: 'linkedin.png', link: 'https://www.linkedin.com/in/siddharth-gope-software-developer/', height: 70, width: 70, download: false },
-        { title: 'Email', image: 'mail.png', link: 'mailto:gsiddharth.1601@gmail.com', height: 70, width: 70, download: false },
-        { title: 'GitHub', image: 'github-sign.png', link: 'https://github.com/siddharthGope', height: 70, width: 70, download: false },
-        { title: 'Download CV', image: 'download.png', download: true, height: 70, width: 70 }
+        { title: 'LinkedIn', image: linkedin, link: 'https://www.linkedin.com/in/siddharth-gope-software-developer/', height: 70, width: 70, download: false },
+        { title: 'Email', image: mail, link: 'mailto:gsiddharth.1601@gmail.com', height: 70, width: 70, download: false },
+        { title: 'GitHub', image: githubSign, link: 'https://github.com/siddharthGope', height: 70, width: 70, download: false },
+        { title: 'Download CV', image: download, download: true, height: 70, width: 70 }
     ]
 
     return (

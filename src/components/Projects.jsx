@@ -1,11 +1,15 @@
 import ProjectCard from './cards/Card'
+import jobTracker from '../assets/job-tracker1.png'
+import portfolioImg from '../assets/portfolio-img.png'
+import weatherApp from '../assets/weatherApp.png'
 
 
 function Projects() {
 
     const projects = [
-        { title: 'Job Tracker', description: 'Job Tracker (MERN Stack App): Developed a full-stack job application tracker using React, Redux Toolkit, Node.js, Express, and MongoDB Atlas. Features include JWT auth, protected routes, CRUD operations, analytics dashboards with Chart.js, and responsive UI with Tailwind CSS.', image: 'job-tracker1.png', link: 'https://mern-job-tracker-app-786g.vercel.app/' },
-        { title: 'Portfolio Site', description: 'Job Tracker (MERN Stack App): Developed a full-stack job application tracker using React, Redux Toolkit, Node.js, Express, and MongoDB Atlas. Features include JWT auth, protected routes, CRUD operations, analytics dashboards with Chart.js, and responsive UI with Tailwind CSS.', image: 'portfolio-img.png', link: 'https://mern-job-tracker-app-786g.vercel.app/' },
+        { title: 'Job Tracker', description: 'Job Tracker (MERN Stack App): Developed a full-stack job application tracker using React, Redux Toolkit, Node.js, Express, and MongoDB Atlas. Features include JWT auth, protected routes, CRUD operations, analytics dashboards with Chart.js, and responsive UI with Tailwind CSS.', image: jobTracker, link: 'https://mern-job-tracker-app-786g.vercel.app/' },
+        { title: 'Portfolio Site', description: 'Developed a modern personal portfolio website using React.js, showcasing  about me, my skills,my journey, projects highlight, and contact information. Implemented a responsive design with Tailwind and customCSS, integrated PDF download functionality, and utilized reusable components for scalability.', image: portfolioImg, link: 'https://my-react-portfolio-eosin-theta.vercel.app/' },
+        { title: 'HowIsOutside?', description: 'Developed a responsive Weather App using React JS and Tailwind CSS that fetches real-time weather data from OpenWeatherMap API. Includes features like city-based search, temperature, humidity, and weather icons with clean UI and smooth UX.', image: weatherApp, link: 'https://react-weather-app-three-inky.vercel.app/' },
     ]
 
     return (

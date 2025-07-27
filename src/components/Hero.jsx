@@ -1,5 +1,6 @@
 import React from 'react'
 import DownloadButton from "./buttons/DownloadButton";
+import HeroImage from '../assets/transparent-rounded-img.png';
 
 
 function Hero() {
@@ -18,7 +19,7 @@ function Hero() {
                 <div className="">
                     <div className="hero-image-bg-2 ">
                         <div className="hero-image-bg ">
-                            <img src="src/assets/transparent-rounded-img.png" alt="siddharth gope" className='hero-img' />
+                            <img src={HeroImage} alt="siddharth gope" className='hero-img' />
                         </div>
                     </div>
                 </div>
