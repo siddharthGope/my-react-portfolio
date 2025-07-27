@@ -29,7 +29,7 @@ function Skills() {
         { title: "UI/UX", image: "skills/web-design.png", height: 50, width: 50 },
     ];
     return (
-        <section className="bg-gradient-to-br from-[var(--third-color)] via-[var(--fourth-color)] to-[var(--tenth-color)]">
+        <section id="skills" className="bg-gradient-to-br from-[var(--third-color)] via-[var(--fourth-color)] to-[var(--tenth-color)]">
             <h2 className="text-5xl font-bold mb-8 text-[var(--thirteen-color)] text-center">
                 Skills
             </h2>

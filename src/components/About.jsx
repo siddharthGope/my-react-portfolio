@@ -4,7 +4,7 @@ import MyJourney from '../assets/my-journey.svg';
 
 function About() {
     return (
-        <section className="bg-gradient-to-br from-[var(--tenth-color)] via-[var(--fourth-color)] to-[var(--fifth-color)] flex flex-col items-center">
+        <section id='about' className="bg-gradient-to-br from-[var(--tenth-color)] via-[var(--fourth-color)] to-[var(--fifth-color)] flex flex-col items-center">
             <h2 className="text-5xl font-bold mb-8 text-[var(--thirteen-color)] text-center">
                 My Journey
             </h2>

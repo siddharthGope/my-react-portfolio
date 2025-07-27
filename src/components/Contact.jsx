@@ -11,7 +11,7 @@ function Contact() {
     ]
 
     return (
-        <section className="bg-gradient-to-br from-[var(--tenth-color)] via-[var(--second-color)] to-[var(--eleventh-color)] flex flex-col items-center">
+        <section id="contact" className="bg-gradient-to-br from-[var(--tenth-color)] via-[var(--second-color)] to-[var(--eleventh-color)] flex flex-col items-center">
             <h2 className="text-5xl font-bold mb-8 text-[var(--thirteen-color)] text-center">
                 Connect with me
             </h2>
