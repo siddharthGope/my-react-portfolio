@@ -4,7 +4,8 @@ import ProjectCard from './cards/Card'
 function Projects() {
 
     const projects = [
-        { title: 'Job Tracker', description: 'Job Tracker (MERN Stack App): Developed a full-stack job application tracker using React, Redux Toolkit, Node.js, Express, and MongoDB Atlas. Features include JWT auth, protected routes, CRUD operations, analytics dashboards with Chart.js, and responsive UI with Tailwind CSS.', image: 'job-tracker1.png', link: 'https://mern-job-tracker-app-786g.vercel.app/' }
+        { title: 'Job Tracker', description: 'Job Tracker (MERN Stack App): Developed a full-stack job application tracker using React, Redux Toolkit, Node.js, Express, and MongoDB Atlas. Features include JWT auth, protected routes, CRUD operations, analytics dashboards with Chart.js, and responsive UI with Tailwind CSS.', image: 'job-tracker1.png', link: 'https://mern-job-tracker-app-786g.vercel.app/' },
+        { title: 'Portfolio Site', description: 'Job Tracker (MERN Stack App): Developed a full-stack job application tracker using React, Redux Toolkit, Node.js, Express, and MongoDB Atlas. Features include JWT auth, protected routes, CRUD operations, analytics dashboards with Chart.js, and responsive UI with Tailwind CSS.', image: 'portfolio-img.png', link: 'https://mern-job-tracker-app-786g.vercel.app/' },
     ]
 
     return (
@@ -16,7 +17,7 @@ function Projects() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {
                             projects.map((project, index) => (
-                                <ProjectCard key={index} {...project} />
+                                <ProjectCard key={index} {...project} projectCard="projectCard" />
                             ))
                         }
 

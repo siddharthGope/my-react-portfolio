@@ -1,5 +1,4 @@
 import React from 'react'
-import TimelineJourney from './Journey'
 import MyJourney from '../assets/my-journey.svg';
 
 function About() {
@@ -17,7 +16,6 @@ function About() {
 
                 When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community.
             </p>
-            {/* <TimelineJourney /> */}
             <img src={MyJourney} alt="my 5 years journey" className='rounded-xl mt-5' />
         </section>
     )
