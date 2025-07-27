@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Inter", sans-serif;
   --first-color: #bbe4e9;
   --second-color: #79c2d0;
   --third-color: #53a8b6;
@@ -31,7 +31,7 @@
   /* width: 80%; */
 }
 section {
-  padding: 150px 5%;
+  padding: 100px 5%;
 }
 .card-image {
   height: 50px;

@@ -5,22 +5,25 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import About from './components/About'
+import { DownloadFileProvider } from './utilities/usedownloadPdf'
 
 
 
 function App() {
 
   return (
-    <>
-      <Navbar />
-      <div className="">
+    <DownloadFileProvider>
+      <div>
+        <Navbar />
         <Hero />
         <Skills />
+        <About />
         <Projects />
+        <Contact />
+        <Footer />
       </div>
-      <Contact />
-      <Footer />
-    </>
+    </DownloadFileProvider>
   )
 }
 

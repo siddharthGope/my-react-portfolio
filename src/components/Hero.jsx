@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import DownloadFileContext from '../utilities/usedownloadPdf';
+
 
 function Hero() {
+    const downloadFile = useContext(DownloadFileContext);
+
+    const handleDownload = () => {
+        downloadFile('src/assets/Siddharth gope.pdf')
+    }
     return (
         <div>
-            <section className="grid grid-cols-2 gap-5 items-center justify-center justify-items-center bg-gradient-to-br from-[var(--first-color)] via-[var(--second-color)] to-[var(--third-color)] text-white">
+            <section className="flex flex-col md:grid md:grid-cols-2 gap-5 items-center justify-center justify-items-center bg-gradient-to-br from-[var(--first-color)] via-[var(--second-color)] to-[var(--third-color)] text-white">
                 <div className="">
                     <p className='text-[var(--thirteen-color)] font-thin text-2xl'>Hi,</p>
                     <h1 className="text-5xl font-bold mb-4 text-[var(--thirteen-color)]">I'm Siddharth Gope</h1>
-                    <p className="text-xl text-[var(--fifth-color)]">A passionate Frontend React.js Developer dedicated to building user-friendly, responsive, and visually appealing websites.</p>
-                    <button className="mt-6 px-6 py-2 text-white rounded-full bg-gradient-to-br from-[var(--eleventh-color)] via-[var(--twelfth-color)] to-[var(--thirteen-color)] transition hover:scale-[1.02] duration-300"><a href="#contact" >Contact Me</a></button>
+                    <p className="text-xl text-[var(--sixth-color)]">A passionate Frontend Developer dedicated to building user-friendly, responsive, and visually appealing websites.</p>
+                    <button className="mt-6 px-6 py-2 text-white rounded-full bg-gradient-to-br from-[var(--eleventh-color)] via-[var(--twelfth-color)] to-[var(--thirteen-color)] transition hover:scale-[1.02] duration-300 shadow-xl text-bold"><a href="#contact" >Contact Me</a></button>
+                    <button onClick={handleDownload} className="mt-6 px-6 py-2 rounded-full bg-gradient-to-br from-[var(--seventh-color)] via-[var(--second-color)] to-[var(--tenth-color)] text-[var(--thirteen-color)] border-[var(--twelfth-color)] shadow-xl ml-3 transition hover:scale-[1.02] duration-300 text-bold">Download CV</button>
                 </div>
                 <div className="">
                     <div className="hero-image-bg-2 ">
