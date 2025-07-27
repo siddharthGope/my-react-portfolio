@@ -1,10 +1,11 @@
-const Card = ({ title, description, image, link }) => {
+const Card = ({ title, description, image, link, height, width }) => {
     return (
         <>
 
             <div className="bg-[#e4f1fe]/10 backdrop-blur-lg border border-[#e4f1fe]/30 shadow-lg rounded-2xl overflow-hidden p-4 transition hover:scale-[1.02] duration-300">
-
-                <img src={`src/assets/${image}`} alt={title} className="w-full h-48 object-cover rounded-xl mb-4" />
+                <div className="card-image-wrap">
+                    <img src={`src/assets/${image}`} alt={title} className={`w-[${width}] h-[${height}] object-contain mb-4 card-image`} />
+                </div>
                 <h3 className="text-white text-xl font-semibold mb-2">{title}</h3>
                 {description && (<p className="text-white/80 text-sm mb-4">{description}</p>)}
                 {/* <a
