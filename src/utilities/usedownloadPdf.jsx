@@ -7,7 +7,7 @@ export const DownloadFileProvider = ({ children }) => {
     const downloadFile = (fileURL) => {
         const link = document.createElement("a")
         link.href = fileURL
-        link.download = "Siddharth-gope-cv.pdf"
+        link.download = "Siddharth-Gope-CV.pdf"
         document.body.appendChild(link)
         link.click()
         document.body.removeChild(link)

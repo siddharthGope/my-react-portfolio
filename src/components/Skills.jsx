@@ -11,13 +11,15 @@ import restApi from '../assets/skills/rest-api.svg';
 import github from '../assets/skills/github.png';
 import githubCiCd from '../assets/skills/github-ci-cd.png';
 import webDesign from '../assets/skills/web-design.png';
+import JavaScript from '../assets/skills/JavaScript.png';
+import Tailwind_CSS from '../assets/skills/Tailwind_CSS.png';
 
 function Skills() {
     const skills = [
         { title: "HTML+CSS", image: htmlcss, height: 50, width: 50 },
         {
             title: "JavaScript",
-            image: "skills/JavaScript.png",
+            image: JavaScript,
             height: 50,
             width: 50,
         },
@@ -27,7 +29,7 @@ function Skills() {
         { title: "Vuex", image: vuexstore, height: 50, width: 50 },
         {
             title: "Tailwind CSS",
-            image: "skills/Tailwind_CSS.png",
+            image: Tailwind_CSS,
             height: 50,
             width: 50,
         },

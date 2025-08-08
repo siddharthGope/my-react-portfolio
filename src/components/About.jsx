@@ -1,5 +1,5 @@
 import React from 'react'
-import MyJourney from '../assets/my-journey.svg';
+import MyJourney from '../assets/my journey.svg';
 
 function About() {
     return (

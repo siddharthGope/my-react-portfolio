@@ -5,7 +5,7 @@ function DownloadButton() {
     const downloadFile = useContext(DownloadFileContext);
 
     const handleDownload = () => {
-        downloadFile('Siddharth gope.pdf')
+        downloadFile('/Siddharth-Gope-CV-8Aug.pdf')
     }
     return (
         <div>

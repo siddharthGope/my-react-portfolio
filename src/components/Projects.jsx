@@ -23,7 +23,7 @@ function Projects() {
         {
             title: "BeezLabs Website",
             description:
-                "Developed the responsive frontend for BeezLabs’ official website using Nuxt JS, Vuetify, Vuex, MailchimpAPI, Vuex, Nuxt-Content Framer Motion, SEO and JavaScript. Implemented dynamic UI components, smooth animations, and cross-device compatibility to highlight the company’s AI-driven services and innovation labs. Focused on performance optimization, accessibility, and clean code architecture for scalable frontend delivery.",
+                "Developed BeezLabs’ official website using Nuxt JS, Vuetify, Vuex, MailchimpAPI, Vuex, Nuxt-Content, SEO and JavaScript. Implemented dynamic optimized, reuseable UI components, smooth animations, responsiveness and cross-browser compatibility to highlight the company’s services and innovation.",
             image: beezlabs,
             link: "https://www.beezlabs.com/",
         },
