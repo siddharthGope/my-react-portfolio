@@ -1,5 +1,5 @@
 import ProjectCard from "./cards/Card";
-import jobTracker from "../assets/job-tracker1.png";
+import jobTracker from "../assets/job-tracker.png";
 import portfolioImg from "../assets/portfolio-img.png";
 import weatherApp from "../assets/weatherApp.png";
 import beezlabs from "../assets/beezlabs.png";
