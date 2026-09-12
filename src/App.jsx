@@ -1,36 +1,28 @@
-import { lazy } from 'react'
-import './App.css'
-const Navbar = lazy(() => import('./components/Navbar'))
-const Hero = lazy(() => import('./components/Hero'))
-const Skills = lazy(() => import('./components/Skills'))
-const Projects = lazy(() => import('./components/Projects'))
-const Contact = lazy(() => import('./components/Contact'))
-const Footer = lazy(() => import('./components/Footer'))
-const About = lazy(() => import('./components/About'))
-import { DownloadFileProvider } from './utilities/usedownloadPdf'
-import { Analytics } from "@vercel/analytics/react"
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-
-function App() {
-
-
-
+export default function App() {
   return (
-    // <>
-    <DownloadFileProvider>
-      <div>
-        <Navbar />
+    <div className="min-h-screen bg-[#fbf9f5] text-[#1c1c1c] font-sans selection:bg-[#ff5733] selection:text-white">
+      <Navbar />
+      <main>
         <Hero />
-        <Skills />
         <About />
         <Projects />
-        <Contact />
-        <Footer />
-        <Analytics />
-      </div>
-    </DownloadFileProvider>
-    // </>
-  )
+        <Skills />
+      </main>
+      <footer className="bg-[#182622] text-[#f2efe9] pt-20 pb-12 px-6 md:px-12 mt-20">
+        <div className="max-w-7xl mx-auto">
+          <Contact />
+          <Footer />
+        </div>
+      </footer>
+    </div>
+  );
 }
-
-export default App

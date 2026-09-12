@@ -1,36 +1,22 @@
-import React from "react";
-import Card from "./cards/Card";
-import githubSign from '../assets/github-sign.png'
-import linkedin from '../assets/linkedin.png'
-import mail from '../assets/mail.png'
-import download from '../assets/download.png'
+import React from 'react';
 
+export default function Contact() {
+  return (
+    <section id="contact" className="mb-14">
+      <span className="text-[10px] tracking-widest uppercase font-mono text-gray-400 block mb-4">
+        03 / START A CONVERSATION
+      </span>
+      <h2 className="text-4xl sm:text-5xl font-serif tracking-tight mb-8 font-normal">
+        Have an idea that <br />
+        <span className="italic font-serif text-[#ff5733]">deserves care?</span>
+      </h2>
 
-function Contact() {
-
-    const contactInfo = [
-        { title: 'LinkedIn', image: linkedin, link: 'https://www.linkedin.com/in/siddharth-gope-software-developer/', height: 70, width: 70, download: false },
-        { title: 'Email', image: mail, link: 'mailto:gsiddharth.1601@gmail.com', height: 70, width: 70, download: false },
-        { title: 'GitHub', image: githubSign, link: 'https://github.com/siddharthGope', height: 70, width: 70, download: false },
-        { title: 'Download CV', image: download, download: true, height: 70, width: 70 }
-    ]
-
-    return (
-        <section id="contact" className="bg-gradient-to-br from-[var(--tenth-color)] via-[var(--second-color)] to-[var(--eleventh-color)] flex flex-col items-center">
-            <h2 className="text-5xl font-bold mb-8 text-[var(--thirteen-color)] text-center">
-                Connect with me
-            </h2>
-            <p className="text-lg text-white  mb-10 text-center">
-                Let's connect and build something amazing together
-            </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-4 items-center">
-                {contactInfo.map((info, index) => (
-                    <Card key={index} {...info} contactCard="contactCard" />
-                ))}
-                {/* <DownloadButton /> */}
-            </div>
-        </section>
-    );
+      <a
+        href="mailto:gsiddharth.1601@gmail.com"
+        className="inline-flex items-center text-sm font-mono text-gray-200 hover:text-white border-b border-gray-600 pb-1"
+      >
+        gsiddharth.1601@gmail.com <span className="ml-1">↗</span>
+      </a>
+    </section>
+  );
 }
-
-export default Contact;

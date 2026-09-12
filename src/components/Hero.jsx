@@ -1,31 +1,45 @@
-import React from 'react'
-import DownloadButton from "./buttons/DownloadButton";
-import HeroImage from '../assets/transparent-rounded-img.png';
 
+export default function Hero() {
+  return (
+    <header className="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-28">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* Left Headline */}
+        <div className="lg:col-span-8 space-y-6">
+          <div className="flex items-center space-x-2 text-[11px] uppercase tracking-widest font-semibold text-gray-500">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff5733]"></span>
+            <span>Frontend Engineer • India</span>
+          </div>
 
-function Hero() {
-    return (
-        <div>
-            <section id='home' className="flex flex-col md:grid md:grid-cols-2 gap-5 items-center justify-center justify-items-center bg-gradient-to-br from-[var(--first-color)] via-[var(--second-color)] to-[var(--third-color)] text-white">
-                <div className="">
-                    <p className='text-[var(--thirteen-color)] font-thin text-2xl'>Hi,</p>
-                    <h1 className="text-5xl font-bold mb-4 text-[var(--thirteen-color)]">I'm Siddharth Gope</h1>
-                    <p className="text-xl text-[var(--sixth-color)]">A passionate Frontend Developer dedicated to building user-friendly, responsive, and visually appealing websites.</p>
-                    <div className="flex">
-                        <button className="mt-6 px-6 py-2 rounded-full bg-gradient-to-br from-[var(--tenth-color)] via-[var(--first-color)] to-[var(--tenth-color)] text-[var(--thirteen-color)] transition hover:scale-[1.02] duration-300 shadow-xl text-bold mr-3"><a href="#contact" >Contact Me</a></button>
-                        <DownloadButton />
-                    </div>
-                </div>
-                <div className="">
-                    <div className="hero-image-bg-2 ">
-                        <div className="hero-image-bg ">
-                            <img src={HeroImage} alt="siddharth gope" className='hero-img' />
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif leading-[1.1] font-normal tracking-tight">
+            Designing calm, <br />
+            <span className="italic font-serif text-[#ff5733]">capable digital</span> <br />
+            experiences.
+          </h1>
+
+          <p className="max-w-md text-sm text-gray-500 pt-2 leading-relaxed">
+            Siddharth Gope turns complex ideas into clear, useful interfaces—one considered interaction at a time.
+          </p>
         </div>
-    )
-}
 
-export default Hero
+        {/* Right Badge & Rings Graphic */}
+        <div className="lg:col-span-4 flex justify-center lg:justify-end">
+          <div className="relative flex items-center justify-center">
+            <div className="w-64 h-64 md:w-72 md:h-72 rounded-full border border-gray-200/80 flex items-center justify-center">
+              <div className="w-52 h-52 md:w-60 md:h-60 rounded-full border border-gray-200/60 flex items-center justify-center">
+                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-[#e2ede2] flex items-center justify-center shadow-inner">
+                  <span className="font-serif text-4xl text-gray-800 tracking-tight">SG</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Sticky Label */}
+            <div className="absolute -top-2 -right-4 bg-[#d4f84c] text-black text-[11px] font-medium leading-tight py-2 px-3 rounded-sm shadow-sm transform rotate-6">
+              4+ years <br />
+              building for the web
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
