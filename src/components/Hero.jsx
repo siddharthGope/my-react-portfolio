@@ -1,5 +1,7 @@
+import waterColorImg from '../assets/Water_color.png';
 
 export default function Hero() {
+
   return (
     <header className="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-28">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -24,12 +26,19 @@ export default function Hero() {
         {/* Right Badge & Rings Graphic */}
         <div className="lg:col-span-4 flex justify-center lg:justify-end">
           <div className="relative flex items-center justify-center">
+          <div className="w-64 h-64 md:w-92 md:h-92 rounded-full border border-gray-200/100 flex items-center justify-center">
+          <div className="w-64 h-64 md:w-82 md:h-82 rounded-full border border-gray-200/90 flex items-center justify-center">
             <div className="w-64 h-64 md:w-72 md:h-72 rounded-full border border-gray-200/80 flex items-center justify-center">
               <div className="w-52 h-52 md:w-60 md:h-60 rounded-full border border-gray-200/60 flex items-center justify-center">
                 <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-[#e2ede2] flex items-center justify-center shadow-inner">
-                  <span className="font-serif text-4xl text-gray-800 tracking-tight">SG</span>
+                  {/* <span className="font-serif text-4xl text-gray-800 tracking-tight">
+                    
+                  </span> */}
+                  <img src={waterColorImg} alt="Siddharth Gope" className="w-full h-full object-cover" />
                 </div>
               </div>
+            </div>
+            </div>
             </div>
 
             {/* Sticky Label */}

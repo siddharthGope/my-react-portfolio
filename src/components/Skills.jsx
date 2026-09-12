@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Skills() {
   const skills = [
+    'Vue.js', 'Nuxt.js', 'Pinia', 'Vuex',
     'React', 'Next.js', 'TypeScript', 'Tailwind CSS',
     'JavaScript (ES6+)', 'Redux', 'Node.js', 'HTML/CSS',
     'Git', 'UI/UX Design', 'Web Performance'
