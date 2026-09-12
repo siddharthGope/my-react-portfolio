@@ -1,22 +1,25 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, DessertIcon } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
     {
       category: 'FULL-STACK PRODUCT',
       title: 'Job Tracker',
-      link: '#',
+      desc:"Job Tracker (MERN Stack App): Developed a full-stack job application tracker using React, Redux Toolkit, Node.js, Express, and MongoDB Atlas. Features include JWT auth, protected routes, CRUD operations, analytics dashboards with Chart.js, and responsive UI with Tailwind CSS.",
+      link: 'https://mern-job-tracker-app-786g.vercel.app/',
     },
     {
       category: 'COMPANY PLATFORM',
-      title: 'BeezLabs',
+      title: 'Beez Innovaliton Labs Pvt. Ltd.',
+      desc:"Developed BeezLabs’ official website using Nuxt JS, Vuetify, Vuex, MailchimpAPI, Vuex, Nuxt-Content, SEO and JavaScript. Implemented dynamic optimized, reuseable UI components, smooth animations, responsiveness and cross-browser compatibility to highlight the company’s services and innovation.",
       link: '#',
     },
     {
       category: 'WEB APPLICATION',
       title: 'HowIsOutside?',
-      link: '#',
+      desc:"Developed a responsive Weather App using React JS and Tailwind CSS that fetches real-time weather data from OpenWeatherMap API. Includes features like city-based search, temperature, humidity, and weather icons with clean UI and smooth UX.",
+      link: 'https://react-weather-app-three-inky.vercel.app/',
     },
   ];
 
@@ -53,6 +56,9 @@ export default function Projects() {
                 />
               </div>
             </div>
+            <p className="text-[12px] tracking-wider uppercase text-gray-500 font-semibold block font-mono pt-3">
+                {proj.desc}
+              </p>
           </a>
         ))}
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Download } from 'lucide-react';
 
 export default function Footer() {
 
@@ -13,6 +14,14 @@ export default function Footer() {
         <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
           GITHUB
         </a>
+        <a
+      href="/Siddharth_Gope_CV.pdf"
+      download="Siddharth_Gope_CV.pdf"
+      className="hover:text-white transition-colors inline-flex items-center gap-2"
+    >
+      <Download size={14} /><span>Download CV</span>
+      
+    </a>
       </div>
     </div>
   );
